@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Lykkehjulet</title>
-</head>
-<body>
-    <img id="wheelElement" src="kisspng-color-wheel-primary-color-vector-graphics-graphic-geel-oranje-gloed-uit-je-haren-laten-verdwijnen-bi-5c15b930c0edb0.3475425315449275367903.png">
-    <h1>Skriv navnene du ønsker å ha med her:</h1>
-    <input type="text" id="inputText" placeholder="Skriv navnet du vil legge til her:">
-    <button id="inputButton" onclick="printInput(inputText.value)" value="">Legg til</button>
-    <br>
-    <button id="spinButton" onclick="spinWheel()">Spinn hjulet</button>
-    <ul id="inputList"></ul>
-    <h1 id="spinResultElement"></h1>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Lykkehjulet</title>
+    </head>
+    <body>
+        <img id="wheelElement" src="wheel.png">
+        <h1>Skriv navnene du ønsker å ha med her:</h1>
+        <input
+            type="text"
+            id="inputText"
+            placeholder="Skriv navnet du vil legge til her:">
+        <button id="inputButton" onclick="printInput(inputText.value)" value="">Legg til</button>
+        <br>
+        <button id="spinButton" onclick="spinWheel()">Spinn hjulet</button>
+        <ul id="inputList"></ul>
+        <h1 id="spinResultElement"></h1>
 
-    <script type="text/javascript" src="index.js"></script>
-    
-</body>
+        <script type="text/javascript" src="index.js"></script>
+
+    </body>
 </html>
