@@ -6,6 +6,7 @@
         <title>Lykkehjulet</title>
     </head>
     <body>
+        <div id="spinner">
         <img id="wheelElement" src="wheel.png">
         <h1>Skriv navnene du ønsker å ha med her:</h1>
         <input
@@ -14,9 +15,13 @@
             placeholder="Skriv navnet du vil legge til her:">
         <button id="inputButton" onclick="printInput(inputText.value)" value="">Legg til</button>
         <br>
-        <button id="spinButton" onclick="spinWheel()">Spinn hjulet</button>
-        <ul id="inputList"></ul>
-        <h1 id="spinResultElement"></h1>
+        
+        </div>
+        <div id="result">
+            <ul id="inputList"></ul>
+            <h1 id="spinResultElement"></h1>
+            <button id="spinButton" onclick="spinWheel()">Spinn hjulet</button>
+        </div>
 
         <script type="text/javascript" src="index.js"></script>
 

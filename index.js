@@ -10,19 +10,21 @@ function printInput (print) {
     inputList.innerHTML += `<li>${print}</li>` 
     inputArray.push(print)
     inputText.value = ""
-    spinButton.style.visibility = "visible"
-    console.log('Dette blir lagt til i listen:', print);
-    console.log(inputArray.length)
+    makeVisible(spinButton);
 }
-
 
 function spinWheel () {
     wheelElement.style.animation = "spin ease 3s"
     var spinResult = inputArray[Math.floor(Math.random()*inputArray.length)]
-    console.log('resultat', spinResult)
-    inputList.style.display="none";
-    spinResultElement.style.visibility= "visible"
-    spinResultElement.innerHTML = `${spinResult}`
-    
+    makeInvisible(inputList);
+    makeInvisible(spinButton);
+    makeVisible(spinResultElement);
+    spinResultElement.innerHTML = `${spinResult}`    
 }
 
+function makeVisible (element) {
+    element.style.visibility = "visible";
+}
+function makeInvisible (element) {
+    element.style.visibility ="hidden";
+}

@@ -1,16 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
 /* generell stiling */
+
 body {
     background-color: gainsboro;
-    text-align: center;
     font-family: 'Source Sans Pro', sans-serif;
+    margin: 100px;
 }
+
 h1 {
     color: rgb(40, 40, 40);
     font-size: 1.3rem;
 }
 
 /* tekstinput feltet */
+
 input {
     background-color: white;
     width: 200px; 
@@ -18,15 +22,17 @@ input {
     border: none; 
     border-radius: 15% / 70%;
     box-shadow: inset -5px -5px 15px hsla(0, 0%, 0%, 0.1);
-    font-family: 'Source Sans Pro', sans-serif;
-    
+    font-family: 'Source Sans Pro', sans-serif;    
 }
+
 input:focus {
     border: none; 
     outline: none; 
     border-radius: 15% / 70%;  
 }
+
 /* knapper */ 
+
 button {
     margin: 10px; 
     padding: 20px; 
@@ -37,40 +43,57 @@ button {
     font-family: 'Source Sans Pro', sans-serif;
     box-shadow: 5px 5px 15px hsla(0, 0%, 0%, 0.2);
 }
+
 button:focus {
     outline: none;
 }
+
 button:hover {
     background-color:darkcyan;
 }
+
 #spinButton {
+    margin-top: 40px; 
     width: 250px; 
-    display: block;
-    margin: 30px auto; 
     visibility: hidden;
 }
-/* liste over navnene */
-ul {
-    max-width: 800px;
-    margin: 50px auto; 
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    background-color: grey;
-    box-shadow: inset -5px -5px 15px hsla(0, 0%, 0%, 0.3);
-    border-radius: 20px;
+
+#spinner {
+    text-align: center;
+    display: inline-block;
+    vertical-align: baseline;
 }
+#result { 
+    display: inline-block; 
+    vertical-align: baseline;
+    margin-left: 100px;   
+    min-width: 600px;
+}
+/* liste over navnene */
+
+ul {
+    margin: 0;
+    padding: 0; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    list-style: none;
+    border-radius: 20px;
+    height: 450px; 
+}
+
 li {
-    max-width: 100px; 
+    max-width: 100px;
     padding: 20px; 
     background-color: darkcyan;
-    border-radius: 10%;
-    margin: 20px; 
-    transition: ease .5s;
+    color: white; 
+    border-radius: 15px;
+    margin: 25px;
 }
+
 /* lykkehjulet */
+
 img {
     width: 300px;
     height: 300px; 
@@ -78,7 +101,9 @@ img {
     border-radius: 50%;
     margin: 50px auto; 
 }
+
 /* PopUp */
+
 #spinResultElement {
     position: absolute;
     top: 150px;
@@ -92,6 +117,7 @@ img {
     text-align: center;
     border-radius: 20px; 
 }
+
 /* animasjoner */
 
 @keyframes spin {
